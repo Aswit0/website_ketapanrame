@@ -1,0 +1,172 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+  background-color:#176ea3;
+  border-radius: 30px;
+  font-size:medium ;
+}
+
+/* NAVBAR
+-------------------------------------------------- */
+.navbar-brand {
+  padding-right: 20px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item a.nav-link:hover {
+  color: #176ea3;
+  font-weight: 500;
+}
+
+/*  CAROUSEL
+-------------------------------------------------- */
+
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 1;
+}
+
+.carousel-item::before{
+  content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.carousel-item {
+  height: 32rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*  REVIEW
+-------------------------------------------------- */
+.tblreview {
+  background-color: #5a5a5a;
+}
+
+.tblreview:hover{
+  background-color: #176ea3;
+}
+
+/*  ITEM
+-------------------------------------------------- */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.dark-jumbotron {
+      background-color: #343a40;
+      color: #fff;
+    }
+
+.featurette-divider {
+  margin: 5rem 0; 
+}
+
+.tblview:hover{
+  background-color: #12547d;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.wisata-card {
+  transition: transform 0.3s ease;
+}
+.wisata-card .card-img-top {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+}
+
+.wisata-card:hover {
+  transform: translate(0, -5px);
+}
+
+/*  FOOTER
+-------------------------------------------------- */
+
+.nav-item a:hover .bi {
+  color: #176ea3;
+}
+/* ANIMATION CSS
+-------------------------------------------------- */
+@keyframes slideIn {
+        from {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .wisata-card {
+        animation: slideIn 1s ease-out;
+    }
+    .selamatdatang{
+      animation: slideIn 1s ease-out;
+    }
+
+    .headview{
+      animation: slideIn 0.5s ease-out;
+    }
+
+    iframe{
+      animation: slideIn 1s ease-out;
+    }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
